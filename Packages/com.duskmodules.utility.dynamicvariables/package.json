@@ -1,0 +1,22 @@
+{
+  "name": "com.duskmodules.utility.dynamicvariables",
+  "version": "1.0.0",
+  "displayName": "DuskModules.Utility.DynamicVariables",
+  "description": "Runtime objects which make working with changing variables and values easier.",
+  "unity": "2020.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://www.duskmodules.com/utility/dynamicvariables",
+  "keywords": [
+    "duskmodules",
+    "utility",
+    "scripts"
+  ],
+  "author": {
+    "name": "Eric van Gastel",
+    "email": "eric@duskmodules.com",
+    "url": "https://www.duskmodules.com"
+  },
+  "dependencies": {
+    "com.duskmodules.utility.utilitycollection": "1.0.0"
+  }
+}

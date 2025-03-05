@@ -1,0 +1,24 @@
+{
+  "name": "com.duskmodules.game.screeneffects",
+  "version": "1.0.0",
+  "displayName": "DuskModules.Game.ScreenEffects",
+  "description": "Provides effects that affect the viewport, such as screen shake and screen flashes.",
+  "unity": "2020.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://www.duskmodules.com/game/screeneffects",
+  "keywords": [
+    "duskmodules",
+    "game",
+    "scripts"
+  ],
+  "author": {
+    "name": "Eric van Gastel",
+    "email": "eric@duskmodules.com",
+    "url": "https://www.duskmodules.com"
+  },
+  "dependencies": {
+    "com.duskmodules.utility.utilitycollection": "1.0.0",
+    "com.duskmodules.utility.dynamicvariables": "1.0.0",
+    "com.duskmodules.utility.singletons": "1.0.0"
+  }
+}

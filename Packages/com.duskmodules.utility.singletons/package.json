@@ -1,0 +1,22 @@
+{
+  "name": "com.duskmodules.utility.singletons",
+  "version": "1.0.0",
+  "displayName": "DuskModules.Utility.Singletons",
+  "description": "Provides generic singleton behaviour.",
+  "unity": "2020.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://www.duskmodules.com/utility/singletons",
+  "keywords": [
+    "duskmodules",
+    "utility",
+    "scripts"
+  ],
+  "author": {
+    "name": "Eric van Gastel",
+    "email": "eric@duskmodules.com",
+    "url": "https://www.duskmodules.com"
+  },
+  "dependencies": {
+    "com.duskmodules.utility.utilitycollection": "1.0.0"
+  }
+}

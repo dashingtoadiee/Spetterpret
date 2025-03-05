@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687382d996d9ccc4b9a52c5b11c3abb5, type: 3}
+  m_Name: Shake-Example
+  m_EditorClassIdentifier: 
+  _frequency:
+    useVariable: 0
+    constant: 40
+    contentObject: {fileID: 0}
+  _strength:
+    useVariable: 0
+    constant: 1
+    contentObject: {fileID: 0}
+  _time:
+    useConstant: 1
+    constant:
+      useVariable: 0
+      constant: 0.25
+      contentObject: {fileID: 0}
+    minimum:
+      useVariable: 0
+      constant: 0
+      contentObject: {fileID: 0}
+    maximum:
+      useVariable: 0
+      constant: 0
+      contentObject: {fileID: 0}
+  _strengthMultiplierOverTime:
+    useVariable: 0
+    constant:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0.0000040613395
+        outSlope: 0.0000040613395
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.02935221
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: -2.8554893
+        outSlope: -2.8554893
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.01720649
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    contentObject: {fileID: 0}
+  _frequencyVariation:
+    inUse: 1
+    content:
+      useConstant: 0
+      constant:
+        useVariable: 1
+        constant: 0
+        contentObject: {fileID: 0}
+      minimum:
+        useVariable: 0
+        constant: 0.9
+        contentObject: {fileID: 0}
+      maximum:
+        useVariable: 0
+        constant: 1.1
+        contentObject: {fileID: 0}
+  _strengthVariation:
+    inUse: 1
+    content:
+      useConstant: 0
+      constant:
+        useVariable: 0
+        constant: 0
+        contentObject: {fileID: 0}
+      minimum:
+        useVariable: 0
+        constant: 0.9
+        contentObject: {fileID: 0}
+      maximum:
+        useVariable: 0
+        constant: 1.1
+        contentObject: {fileID: 0}
+  _spatialBlend: 0
+  _minDistance:
+    useVariable: 0
+    constant: 1
+    contentObject: {fileID: 0}
+  _maxDistance:
+    useVariable: 0
+    constant: 500
+    contentObject: {fileID: 0}
+  _strengthRollOff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 2
+      value: 0.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 4
+      value: 0.125
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 8
+      value: 0.0625
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 16
+      value: 0.03125
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 32
+      value: 0.015625
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 64
+      value: 0.0078125
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 128
+      value: 0.00390625
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 256
+      value: 0.001953125
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 512
+      value: 0.0009765625
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _strengthVector: {x: 1, y: 1, z: 0}
+  _frequencyVector: {x: 1, y: 1, z: 0}
+  _direction:
+    inUse: 0
+    content:
+      useVariable: 0
+      constant: 0
+      contentObject: {fileID: 0}

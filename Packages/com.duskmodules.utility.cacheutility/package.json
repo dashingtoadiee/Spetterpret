@@ -1,0 +1,19 @@
+{
+  "name": "com.duskmodules.utility.cacheutility",
+  "version": "1.0.0",
+  "displayName": "DuskModules.Utility.CacheUtility",
+  "description": "Provides runtime cache data for ScriptableObjects, allowing them to hold data that is reset at play start.",
+  "unity": "2020.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://www.duskmodules.com/utility/cacheutility",
+  "keywords": [
+    "duskmodules",
+    "utility",
+    "scripts"
+  ],
+  "author": {
+    "name": "Eric van Gastel",
+    "email": "eric@duskmodules.com",
+    "url": "https://www.duskmodules.com"
+  }
+}

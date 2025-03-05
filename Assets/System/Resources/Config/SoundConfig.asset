@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8916883167651329309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15a42f69211b481ab09d91cc5600a31, type: 3}
+  m_Name: gameplay_volume
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: d7045167c6f3c5841b59dbc8c3811ccd, type: 2}
+  parameterName: gameplay_volume
+  isVolume: 1
+  persisted: 0
+  instant: 1
+  speed: 0
+  minimum: 0
+  maximum: 0
+  multiTargetMode: 0
+--- !u!114 &-3171782880146592578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15a42f69211b481ab09d91cc5600a31, type: 3}
+  m_Name: music_volume
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: d7045167c6f3c5841b59dbc8c3811ccd, type: 2}
+  parameterName: music_volume
+  isVolume: 1
+  persisted: 0
+  instant: 1
+  speed: 0
+  minimum: 0
+  maximum: 0
+  multiTargetMode: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7aaf627045f4094b1d1cbe4f7a4b61, type: 3}
+  m_Name: SoundConfig
+  m_EditorClassIdentifier: 
+  _audioMixers:
+  - {fileID: 24100000, guid: d7045167c6f3c5841b59dbc8c3811ccd, type: 2}
+  playerPreferencesKey: sound-prefs
+  parameters:
+  - {fileID: 926768672264661610}
+  - {fileID: -3171782880146592578}
+  - {fileID: 7632144381117292017}
+  - {fileID: -8916883167651329309}
+  conflictParameters: []
+  undeterminedMixers: []
+  undeterminedParameters: []
+--- !u!114 &926768672264661610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15a42f69211b481ab09d91cc5600a31, type: 3}
+  m_Name: sounds_volume
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: d7045167c6f3c5841b59dbc8c3811ccd, type: 2}
+  parameterName: sounds_volume
+  isVolume: 1
+  persisted: 0
+  instant: 1
+  speed: 0
+  minimum: 0
+  maximum: 0
+  multiTargetMode: 0
+--- !u!114 &7632144381117292017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15a42f69211b481ab09d91cc5600a31, type: 3}
+  m_Name: gameplay_pitch
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: d7045167c6f3c5841b59dbc8c3811ccd, type: 2}
+  parameterName: gameplay_pitch
+  isVolume: 0
+  persisted: 0
+  instant: 1
+  speed: 0
+  minimum: 0
+  maximum: 0
+  multiTargetMode: 0

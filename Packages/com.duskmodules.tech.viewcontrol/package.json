@@ -1,0 +1,19 @@
+{
+  "name": "com.duskmodules.tech.viewcontrol",
+  "version": "1.0.0",
+  "displayName": "DuskModules.Tech.ViewControl",
+  "description": "(WIP): Offers scripts for controlling viewport dimensions at runtime, ensuring a consistent camera size per screen ratio.",
+  "unity": "2020.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://www.duskmodules.com/tech/viewcontrol",
+  "keywords": [
+    "duskmodules",
+    "tech",
+    "scripts"
+  ],
+  "author": {
+    "name": "Eric van Gastel",
+    "email": "eric@duskmodules.com",
+    "url": "https://www.duskmodules.com"
+  }
+}

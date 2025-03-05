@@ -1,0 +1,18 @@
+{
+    "name": "DuskModules.Game.ScreenEffects",
+    "rootNamespace": "",
+    "references": [
+        "DuskModules.Utility.UtilityCollection",
+        "DuskModules.Utility.DynamicVariables",
+        "DuskModules.Utility.Singletons"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

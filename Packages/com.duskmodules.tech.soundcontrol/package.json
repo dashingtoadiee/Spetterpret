@@ -1,0 +1,23 @@
+{
+  "name": "com.duskmodules.tech.soundcontrol",
+  "version": "1.0.0",
+  "displayName": "DuskModules.Tech.SoundControl",
+  "description": "Provides a singleton controller which handles playing one time sounds using an object pool, allows creation of Sound assets which have more control on what clip is played, and how. Includes volume control functionality.",
+  "unity": "2020.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://www.duskmodules.com/tech/soundcontrol",
+  "keywords": [
+    "duskmodules",
+    "tech",
+    "scripts"
+  ],
+  "author": {
+    "name": "Eric van Gastel",
+    "email": "eric@duskmodules.com",
+    "url": "https://www.duskmodules.com"
+  },
+  "dependencies": {
+    "com.duskmodules.utility.utilitycollection": "1.0.0",
+    "com.duskmodules.utility.singletons": "1.0.0"
+  }
+}

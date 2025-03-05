@@ -1,0 +1,26 @@
+{
+  "name": "com.duskmodules.utility.utilitycollection",
+  "version": "1.0.0",
+  "displayName": "DuskModules.Utility.UtilityCollection",
+  "description": "Collection of utility scripts utilized by other DuskModules, or scripts that fit no other category.",
+  "unity": "2020.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://www.duskmodules.com/utility/utilitycollection",
+  "keywords": [
+    "duskmodules",
+    "utility",
+    "scripts"
+  ],
+  "samples": [
+    {
+      "displayName": "Demo",
+      "description": "Contains assets showcasing how to use each UtilityCollection feature.",
+      "path": "samples~/demo"
+    }
+  ],
+  "author": {
+    "name": "Eric van Gastel",
+    "email": "eric@duskmodules.com",
+    "url": "https://www.duskmodules.com"
+  }
+}
