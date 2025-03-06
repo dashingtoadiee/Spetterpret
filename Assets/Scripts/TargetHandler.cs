@@ -9,47 +9,78 @@ public class TargetHandler : MonoBehaviour
     public int TotalPlayerObjects => playerObjs.Count;
     public List<PilloTarget> Targets;
     public List<GameObject> GameObjs;
-    [SerializeField] private int maxPlayers;
-
-    public static event Action OnPlayerCountChange;
+    public int MaxPillos;
 
     public static TargetHandler Instance;
 
     private void Awake()
     {
         playerObjs = new List<PlayerObject>();
-        
+
         if (Instance != null && Instance != this)
         {
             Destroy(this);
         }
 
-        else 
+        else
         {
             Instance = this;
         }
+    }
+
+    void Update()
+    {
+
     }
 
     private void OnEnable()
     {
         Pillo.onPilloConnected += AddPlayer;
         Pillo.onPilloDisconnected += RemovePlayer;
+
+        SplatterSpawner.OnSplatterSpawned += AddSplatterToPillo;
     }
 
     private void OnDisable()
     {
         Pillo.onPilloConnected -= AddPlayer;
         Pillo.onPilloDisconnected -= RemovePlayer;
+
+        SplatterSpawner.OnSplatterSpawned -= AddSplatterToPillo;
     }
 
-    private void AddPlayer(Pillo p) 
+    private void AddPlayer(Pillo p)
     {
-        OnPlayerCountChange?.Invoke();
+        if (playerObjs.Count < MaxPillos) {
+            playerObjs.Add(new PlayerObject(p));
+        }
     }
 
-    private void RemovePlayer(Pillo p) 
+    private void RemovePlayer(Pillo p)
     {
-        OnPlayerCountChange?.Invoke();
+        PlayerObject toBeRemoved = null;
+
+        foreach (PlayerObject player in playerObjs)
+        {
+            if (player.Pillo == p)
+            {
+                toBeRemoved = player;
+                break;
+            }
+        }
+        
+        playerObjs.Remove(toBeRemoved);
+    }
+
+    private void AddSplatterToPillo(Pillo p, GameObject g) 
+    {
+        foreach (PlayerObject player in playerObjs)
+        {
+            if (player.Pillo == p)
+            {
+                g.GetComponent<SplatterTransformer>().Setup(p);
+            }
+        }
     }
 }
 
@@ -57,11 +88,9 @@ public class TargetHandler : MonoBehaviour
 public class PlayerObject
 {
     public Pillo Pillo;
-    public GameObject Paddle;
 
-    public PlayerObject(Pillo p, GameObject g)
+    public PlayerObject(Pillo p)
     {
         Pillo = p;
-        Paddle = g;
     }
 }
